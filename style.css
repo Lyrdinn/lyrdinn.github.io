@@ -92,7 +92,8 @@
 .BackgroundImage {
   background-image: url("./images/vaporwave.jpg");
   background-repeat: repeat-y;
-  background-size:auto;
+  background-size:100%;
+  float: left;
 }
 
 .Icons {
