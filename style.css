@@ -1,0 +1,326 @@
+:root {
+  --darkTransparent: #180427d1;
+  --darkestBlue: #0D1014;
+  --darkBlue: #1F242B;
+  --midToDarkBlue: #2F3640;
+  --midBlue: #535e6dc0;
+  --lightBlue: #6E7E92;
+  --hoverTextColor: #b8cbe6;
+  --darkTextColor: #839FC6;
+  --midTextColor: #c9d9f0;
+  --lightTextColor: #C4D5ED;
+  --highlightColor: #0D1014;
+  --transparentBlack: rgba(0, 0, 0, 0.5);
+  --strongBlack: rgba(0, 0, 0, 0.8);
+}
+
+::selection {
+  background: var(--highlightColor);
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: var(--highlightColor);
+  /* Gecko Browsers */
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sideBarList {
+  padding-left: 5%;
+  padding-top: 5%;
+  font: 200% "Andale Mono", sans-serif;
+}
+
+.sideBarList a:link {
+  text-decoration: none;
+  color: var(--darkTextColor);
+}
+
+.sideBarList a:visited {
+  text-decoration: none;
+  color: var(--darkTextColor);
+}
+
+.sideBarList a:hover {
+  text-decoration: underline;
+  color: var(--hoverTextColor);
+}
+
+.portrait {
+  height: 200px;
+  width: 180px;
+  overflow: visible;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 0.2s ease;
+}
+
+.portraitContainer {
+  text-align: center;
+}
+
+.portraitContainer img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 0, 225, 0.5);
+}
+
+.Content {
+  background-color: #000000;
+  width: 85%;
+  right: 0;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  float: right;
+}
+
+.BackgroundImage {
+  background-image: url("./images/vaporwave.jpg");
+  background-repeat: repeat-y;
+  background-size:auto;
+}
+
+.Icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.Icons img {
+  margin: 10px;
+  width: 70px;
+  height: auto;
+  transition: transform .2s;
+  align-items: center;
+}
+
+.Icons a {
+  align-items: center;
+}
+
+.Icons img:hover {
+  transform: scale(1.2);
+}
+
+.Main_Panel_Video {
+  height: 314px;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-right: 20%;
+  padding-left: 20%;  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Main_Panel_Video .video {
+  height: 100%;
+  width: 442px;
+  border-radius: 30px;
+}
+
+body {
+  right: 0;
+  border: 0;
+  margin: 0;
+}
+
+#home {
+  text-align: center;
+  /* background-color: var(--midToDarkBlue);*/
+  /* Black */
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+#intro {
+  background-color: var(--darkTransparent);
+  border-radius: 1em;
+  padding: 1em;
+  font-size: 1.1em;
+  color: var(--midTextColor);
+  font: 100% "Andale Mono", sans-serif;
+}
+
+#intro a:link {
+  color: var(--midTextColor);
+  text-decoration: underline;
+  font: 100% "Andale Mono", sans-serif;
+}
+
+#intro a:visited {
+  color: var(--midTextColor);
+  text-decoration: underline;
+  font: 100% "Andale Mono", sans-serif;
+}
+
+#intro a:hover {
+  color: var(--midTextColor);
+  text-decoration: none;
+  font: 100% "Andale Mono", sans-serif;
+}
+
+#Projects {
+  width: 90%;
+  margin: auto;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  gap: 50px;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.media {
+  flex: 1;
+  max-width: 40%;
+}
+
+.media img,
+.media video {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.text-box {
+  flex: 1;
+  max-width: 100%;
+  background-color: var(--darkTransparent);
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font: 100% "Andale Mono", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the top-left */
+  justify-content: flex-start; /* Align vertically to the top */
+  color: #c9d9f0;
+}
+
+.ProjectIcons {
+  display: flex;
+  gap: 30px;
+}
+
+.ProjectIcons img {
+  width: 30px;
+  height: auto;
+  transition: transform .2s;
+  align-items: center;
+}
+
+.ProjectIcons a {
+  align-items: center;
+}
+
+.ProjectIcons img:hover {
+  transform: scale(1.2);
+}
+
+.ItchImage {
+  display:inline-flex;
+  align-self: center;
+  vertical-align: middle;
+}
+
+.ItchImage img {
+  width: 50px;
+  height: auto;
+  transition: transform .2s;
+}
+
+.ItchImage img:hover {
+  transform: scale(1.2);
+}
+
+#DownloadResumeButton {
+  background-color: var(--lightBlue);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#Resume {
+  background-color: var(--lightBlue);
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.ResumeImage {
+  text-align: center;
+}
+
+.ResumeImageClickable {
+  display: inline-block;
+  width:40%;
+}
+
+.ResumeImageClickable img {
+  width: 100%;
+  height: auto;
+  transition: transform .2s;
+}
+
+.ResumeImageClickable:hover img {
+  transform: scale(1.02);
+}
+
+.DownloadResumeButtons {
+  text-align: center;
+  display:flex;
+  justify-content:center;
+}
+
+.DownloadResumeButton{
+  background-color: var(--midBlue);
+  padding:5%;
+  margin-top:3%;
+  margin-bottom:1%;
+  margin-left:5%;
+  margin-right:5%;
+  border-radius: 8px;
+  transition: transform .2s;
+}
+
+.DownloadResumeButtons :link{
+  color:var(--lightTextColor);
+  text-decoration: none;
+}
+
+.DownloadResumeButtons :visited{
+  color:var(--lightTextColor);
+  text-decoration: none;
+}
+
+.DownloadResumeButton:hover {
+  transform: scale(1.1);
+}
