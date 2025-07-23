@@ -16,7 +16,7 @@
                 <img src="images/ralsei.png" class="portrait">
             </div>
             <ul>
-                <div class="sideBarList"><a href="#home">Home</a></div>
+                <div class="sideBarList"><a href="#home">Home</Home></a></div>
                 <div class="sideBarList"><a href="#about">About Me</a></div>
                 <div class="sideBarList"><a href="#Projects">Projects</a></div>
                 <div class="sideBarList"><a href="#Resume">Resume</a></div>
@@ -164,3 +164,25 @@
     </div>
   </body>
 </html>
+
+<script>
+  // Create an IntersectionObserver instance
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate'); // Add the "animate" class
+          observer.unobserve(entry.target);      // Stop watching this element
+        }
+      });
+    },
+    {
+      threshold: 0.2 // Trigger when 20% of the element is visible
+    }
+  );
+
+  // Select and observe all sections
+  document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
