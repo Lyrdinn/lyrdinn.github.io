@@ -373,7 +373,7 @@ div.text-box {
 }
 
 .ItchImage img {
-  width: 50px;
+  width: 40px;
   height: auto;
   transition: transform .2s;
 }
