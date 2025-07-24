@@ -12,45 +12,40 @@
   </head>
 
   <body >
-    <header>
-        <div class="sidenav">
-            <div class = "sideBarHeader">
-                <div class="portraitContainer">
+    <main class="app">
+        <nav class="sidenav">
+            <div class="side-bar-header">
+                <div class="portrait-container">
                     <img src="images/ralsei.png" class="portrait">
                 </div>
             </div>
             <ul>
-                <div class="sideBarList"><a href="#home">Home</Home></a></div>
-                <div class="sideBarList"><a href="#about">About Me</a></div>
-                <div class="sideBarList"><a href="#Projects">Projects</a></div>
-                <div class="sideBarList"><a href="#Resume">Resume</a></div>
+                <li class="side-bar-list"><a href="#home">Home</Home></a></li>
+                <li class="side-bar-list"><a href="#about">About Me</a></li>
+                <li class="side-bar-list"><a href="#Projects">Projects</a></li>
+                <li class="side-bar-list"><a href="#Resume">Resume</a></li>
             </ul>
-        </div>
-    </header>
+        </nav>
+        <div class="content">
+            <div id="intro" class="information-box">
+                <div class="information-box-header">
+                    <h1>Marina SECORD - Gameplay Programmer</h1>
+                </div>
 
-    <div class="Content">
-        <div class ="BackgroundImage">
-            <div id="home">
-                <div id="intro">
-                    <div class="intro-header">
-                        <h1>Marina SECORD - Gameplay Programmer</h1>
-                    </div>
-
-                    <div class="Icons">
-                        <a href="https://github.com/Lyrdinn" target="_blank">
-                            <img src="images/github.webp" alt="">
-                        </a>
-                        <a href="https://lyrdinn.itch.io/" target="_blank">
-                            <img src="images/itch.png" alt="">
-                        </a>
-                        <a href="https://www.linkedin.com/in/marina-secord-4b01202a9/" target="_blank">
-                            <img src="images/linkedin.png" alt="">
-                        </a>
-                    </div>
+                <div class="icons-list">
+                    <a href="https://github.com/Lyrdinn" target="_blank">
+                        <img src="images/github.webp" alt="">
+                    </a>
+                    <a href="https://lyrdinn.itch.io/" target="_blank">
+                        <img src="images/itch.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/marina-secord-4b01202a9/" target="_blank">
+                        <img src="images/linkedin.png" alt="">
+                    </a>
                 </div>
             </div>
 
-            <div class="Main_Panel_Video">
+            <div class="main-panel-video">
                 <iframe class="video" width="560" height="315"
                     src="https://www.youtube.com/embed/xS_NTMbvMz4" title="YouTube video player"
                     frameborder="0"
@@ -59,35 +54,40 @@
                 </iframe>
             </div> 
             
-            <div id ="about">
-                <div id="home">
-                    <div id="intro">
-                        <div class="intro-header">
-                            <h1>About Me</h1>
-                        </div>
-
-                        <p>
-                        Hi I'm <b>Marina SECORD</b>, a Master 2 student at <b>CNAM-ENJMIN</b> and currently a Unity dev interning at <b>Ikigai - Games For Citizens</b>. <br><br>
-                        
-                        Trying to specialize as a <b>Gameplay Programmer</b>, I am very passionate about Procedural Generation and Multiplayer Games ! <br><br>
-                        
-                        Feel free to look at my projects. <br>
-                        </p>
-                    </div>
+            <div class="information-box" id ="about">
+                <div class="information-box-header">
+                    <h1>About Me</h1>
                 </div>
+            
+                <p>
+                Hi I'm <b>Marina SECORD</b>, a Master 2 student at <b>CNAM-ENJMIN</b> and currently a Unity dev interning at <b>Ikigai - Games For Citizens</b>. <br><br>
+                
+                Trying to specialize as a <b>Gameplay Programmer</b>, I am very passionate about Procedural Generation and Multiplayer Games ! <br><br>
+                
+                Feel free to look at my projects. <br>
+                </p>
             </div>
 
-            <div id="Projects" class="content page-scroll" style="justify-content: space-around">
-                <div class="section">
+
+            <div class="project-list">
+                <section class="project-item">
                     <div class="media left">
-                    <img src="images/farm-bunnies.png" alt="Media" />
+                        <img src="images/farm-bunnies.png" alt="Media" />
                     </div>
-                    <div class="text-box">
-                        <div class="textbox-header">
+                    <div class="information-box text-box">
+                        <div class="information-box-header">
                             <h1>Farm Bunnies</h1>
                         </div>
-                        <div class="text-box-content">
-                            <div class="ProjectIcons">
+                        <div class="information-box-content">
+                            <div class="tags">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a title="" href="" class="color1">Online</a>
+                                    <a title="" href="" class="color1">Multiplayer</a>
+                                    <a title="" href="" class="color1">Farming Game</a>
+                                </p>
+                            </div>
+                            <div class="project-icons-list">
                                 <img src="images/unityblack.png" alt="">
                                 <img src="images/csharp.png" alt="">
                             </div>
@@ -96,28 +96,37 @@
                                 <br>
                                 An online co-op farming game for 1 to 4 players.
                             </p>
-                            <h2>
+                            <div class="project-play-link-wrapper">
                                 Play it here : 
                                 <div class="ItchImage"> 
                                     <a href="https://lyrdinn.itch.io/farm-bunnies" target="_blank">
                                         <img src="images/itch.png"/>
                                     </a>
                                 </div>
-                            </h2>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="section reverse">
+                <section class="project-item reverse">
                     <div class="media right">
-                    <img src="images/theymakesoundgif.gif" alt="Media" />
+                        <img src="images/theymakesoundlogo.jpg" alt="Media" />
                     </div>
-                    <div class="text-box">
-                        <div class="textbox-header">
+                    <div class="information-box text-box">
+                        <div class="information-box-header">
                             <h1>They Make Sounds</h1>
                         </div>
-                        <div class="text-box-content">
-                            <div class="ProjectIcons">
+                        <div class="information-box-content">
+                            <div class="tags">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a title="" href="" class="color1">Player Controller</a>
+                                    <a title="" href="" class="color1">Artifacts</a>
+                                    <a title="" href="" class="color1">Acessibility</a>
+                                    <a title="" href="" class="color1">Exploration</a>
+                                </p>
+                            </div>
+                            <div class="project-icons-list">
                                 <img src="images/unrealblack.png" alt="">
                                 <img src="images/cplusplus.png" alt="">
                             </div>
@@ -125,28 +134,37 @@
                                 They Make Sounds is a 3D exploration game where you play an archaeologist descending from the gigantic abyss to study the ruins of a mysterious civilization. <br> <br>
                                 Equipped with ancient artifacts, make your way even deeper into the abyss to unravel the secrets of this mysterious civilization and discover how their story relates to yours.
                             </p>
-                            <h2>
+                            <div class="project-play-link-wrapper">
                                 Play it here :
                                 <div class="ItchImage"> 
                                     <a href="https://theymakesounds.itch.io/they-make-sounds" target="_blank">
                                         <img src="images/itch.png"/>
                                     </a>
                                 </div>
-                            </h2>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="section">
+                <section class="project-item">
                     <div class="media left">
-                    <img src="images/earwyrmgif.gif" alt="Media" />
+                        <img src="images/earwyrmlogo.png" alt="Media" />
                     </div>
-                    <div class="text-box">
-                        <div class="textbox-header">
+                    <div class="information-box text-box">
+                        <div class="information-box-header">
                             <h1>Earwyrm</h1>
                         </div>
-                        <div class="text-box-content">
-                            <div class="ProjectIcons">
+                        <div class="information-box-content">
+                            <div class="tags">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a title="" href="" class="color1">Local</a>
+                                    <a title="" href="" class="color1">Multiplayer</a>
+                                    <a title="" href="" class="color1">Rythm Game</a>
+                                    <a title="" href="" class="color1">Top Down Arena</a>
+                                </p>
+                            </div>
+                            <div class="project-icons-list">
                                 <img src="images/unityblack.png" alt="">
                                 <img src="images/csharp.png" alt="">
                             </div>
@@ -156,28 +174,37 @@
                                 <br>
                                 Using your musical magic, your objective is to prevent war by showing those bullies that your music doesn’t deserve such hate.
                             </p>
-                            <h2>
+                            <div class="project-play-link-wrapper">
                                 Play it here :
                                 <div class="ItchImage"> 
                                     <a href="https://earwyrm.itch.io/earwyrm" target="_blank">
                                         <img src="images/itch.png"/>
                                     </a>
                                 </div>
-                            </h2>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="section reverse">
+                <section class="project-item reverse">
                     <div class="media right">
-                    <img src="images/shattered-hourglass.gif" alt="Media" />
+                        <img src="images/shattered-hourglass.gif" alt="Media">
                     </div>
-                    <div class="text-box">
-                        <div class="textbox-header">
+                    <div class="information-box text-box">
+                        <div class="information-box-header">
                             <h1>Shattered Hourglass</h1>
                         </div>
-                        <div class="text-box-content">
-                            <div class="ProjectIcons">
+                        <div class="information-box-content">
+                            <div class="tags">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a title="" href="" class="color1">Procedural Generation</a>
+                                    <a title="" href="" class="color1">AI pathfinding</a>
+                                    <a title="" href="" class="color1">RPG Systems</a>
+                                    <a title="" href="" class="color1">Dungeon Crawler</a>
+                                </p>
+                            </div>
+                            <div class="project-icons-list">
                                 <img src="images/unrealblack.png" alt="">
                                 <img src="images/cplusplus.png" alt="">
                             </div>
@@ -185,42 +212,22 @@
                                 They Make Sounds is a 3D exploration game where you play an archaeologist descending from the gigantic abyss to study the ruins of a mysterious civilization. <br> <br>
                                 Equipped with ancient artifacts, make your way even deeper into the abyss to unravel the secrets of this mysterious civilization and discover how their story relates to yours.
                             </p>
-                            <h2>
+                            <div class="project-play-link-wrapper">
                                 Play it here :
                                 <div class="ItchImage"> 
                                     <a href="https://theymakesounds.itch.io/they-make-sounds" target="_blank">
-                                        <img src="images/itch.png"/>
+                                        <img src="images/itch.png">
                                     </a>
                                 </div>
-                            </h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- <div id="Resume">
-                <div class="ResumeImage">
-                    <div class="ResumeImageClickable">
-                        <a href="images/resume.pdf" download="Louis_VOGEL_Resume" target="_blank">
-                            <img src="images/resume.png" alt="Resume Image" />
-                        </a>
-                    </div>
-                </div>
-                <div class="DownloadResumeButtons">
-                    <a href="images/resume.pdf" download="Louis_VOGEL_Resume" target="_blank">
-                        <div class="DownloadResumeButton">
-                            Download Resume in English
-                        </div>
-                    </a>
-                    <a href="images/cv.pdf" download="Louis_VOGEL_CV" target="_blank">
-                        <div class="DownloadResumeButton">
-                            Télécharger le CV en Français
-                        </div>
-                    </a>
-                </div>
-            </div> -->
+            </div>
         </div>
-    </div>
+    </main>
+
   </body>
 </html>
 
@@ -241,7 +248,7 @@
   );
 
   // Select and observe all sections
-  document.querySelectorAll('.section').forEach(section => {
+  document.querySelectorAll('.project-item').forEach(section => {
     observer.observe(section);
   });
 </script>
