@@ -20,10 +20,10 @@
                 </div>
             </div>
             <ul>
-                <li class="side-bar-list"><a href="#home">Home</Home></a></li>
+                <li class="side-bar-list"><a href="#intro">Home</Home></a></li>
                 <li class="side-bar-list"><a href="#about">About Me</a></li>
-                <li class="side-bar-list"><a href="#Projects">Projects</a></li>
-                <li class="side-bar-list"><a href="#Resume">Resume</a></li>
+                <li class="side-bar-list"><a href="#projects">Projects</a></li>
+                <li class="side-bar-list"><a href="#resume">Resume</a></li>
             </ul>
         </nav>
         <div class="content">
@@ -45,16 +45,17 @@
                 </div>
             </div>
 
-            <div class="main-panel-video">
+
+            <!-- <div class="main-panel-video">
                 <iframe class="video" width="560" height="315"
                     src="https://www.youtube.com/embed/xS_NTMbvMz4" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
-            </div> 
+            </div>  -->
             
-            <div class="information-box" id ="about">
+            <div id ="about" class="information-box">
                 <div class="information-box-header">
                     <h1>About Me</h1>
                 </div>
@@ -71,7 +72,7 @@
             </div>
 
 
-            <div class="project-list">
+            <div id="projects" class="project-list">
                 <section class="project-item">
                     <div class="media left">
                         <img src="images/farm-bunnies.png" alt="Media" />
@@ -84,9 +85,9 @@
                             <div class="tags">
                                 <p>
                                     &nbsp;&nbsp;&nbsp;
-                                    <a title="" href="" class="color1">Online</a>
-                                    <a title="" href="" class="color1">Multiplayer</a>
-                                    <a title="" href="" class="color1">Farming Game</a>
+                                    <a title="" class="color1">Online</a>
+                                    <a title="" class="color1">Multiplayer</a>
+                                    <a title="" class="color1">Farming Game</a>
                                 </p>
                             </div>
                             <div class="project-icons-list">
@@ -135,10 +136,10 @@
                             <div class="tags">
                                 <p>
                                     &nbsp;&nbsp;&nbsp;
-                                    <a title="" href="" class="color1">Player Controller</a>
-                                    <a title="" href="" class="color1">Artifacts</a>
-                                    <a title="" href="" class="color1">Acessibility</a>
-                                    <a title="" href="" class="color1">Exploration</a>
+                                    <a title="" class="color1">Player Controller</a>
+                                    <a title="" class="color1">Artifacts</a>
+                                    <a title="" class="color1">Acessibility</a>
+                                    <a title="" class="color1">Exploration</a>
                                 </p>
                             </div>
                             <div class="project-icons-list">
@@ -178,6 +179,54 @@
 
                 <section class="project-item">
                     <div class="media left">
+                        <img src="images/theymakesoundlogo.jpg" alt="Media" />
+                    </div>
+                    <div class="information-box text-box">
+                        <div class="information-box-header">
+                            <h1>Procedural Animation</h1>
+                        </div>
+                        <div class="information-box-content">
+                            <div class="tags">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a title="" class="color1">Procedural Animation</a>
+                                    <a title="" class="color1">Inverse Kinematics</a>
+                                    <a title="" class="color1">Particles</a>
+                                </p>
+                            </div>
+                            <div class="project-icons-list">
+                                <img src="images/unrealblack.png" alt="">
+                                <img src="images/cplusplus.png" alt="">
+                            </div>
+                            <p>
+                                During a full week we learned about procedural animations and made some ourselves in teams of two.<br>
+                                During the making of They Make Sounds I also made research and did some tests in Unreal Engine.<br> 
+                                <br>
+                                Here what I did :
+                                <ul>
+                                    <li>
+                                        🦵 Inverse Kinematics :
+                                        I learned how to create IK movement using bones and added translation and rotation movement.
+                                    </li>
+                                    <li>
+                                        🖥️ Animation Research :
+                                        For TMS I made some research and used tutorials to obtain a procedurally animated spider in Unreal.
+                                    
+                                    <li>
+                                        🎇 Particles system :
+                                        I tried to replicate a fire in C++ using colored particles. I also created multiple particle animations for my pico-8 game.
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="project-play-link-wrapper">
+                                &nbsp;&nbsp;&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-item reverse">
+                    <div class="media right">
                         <img src="images/earwyrmlogo.png" alt="Media" />
                     </div>
                     <div class="information-box text-box">
@@ -188,10 +237,10 @@
                             <div class="tags">
                                 <p>
                                     &nbsp;&nbsp;&nbsp;
-                                    <a title="" href="" class="color1">Local</a>
-                                    <a title="" href="" class="color1">Multiplayer</a>
-                                    <a title="" href="" class="color1">Rythm Game</a>
-                                    <a title="" href="" class="color1">Top Down Arena</a>
+                                    <a title="" class="color1">Local</a>
+                                    <a title="" class="color1">Multiplayer</a>
+                                    <a title="" class="color1">Rythm Game</a>
+                                    <a title="" class="color1">Top Down Arena</a>
                                 </p>
                             </div>
                             <div class="project-icons-list">
@@ -199,7 +248,7 @@
                                 <img src="images/csharp.png" alt="">
                             </div>
                             <p>
-                                Earwyrm is a rhythmic, action oriented, 4 players coop game. You and your teammates play as Dragon-Bards. <br> <br>
+                                Earwyrm is a rhythmic, action oriented, 4 players coop game set in a top down arena where you play as cute dragon bards fighting against the soliders who want to stop your music. <br> <br>
                                 Here is how I contributed to the project :
                                 <ul>
                                     <li>
@@ -228,8 +277,8 @@
                     </div>
                 </section>
 
-                <section class="project-item reverse">
-                    <div class="media right">
+                <section class="project-item">
+                    <div class="media left">
                         <img src="images/shattered-hourglass.gif" alt="Media">
                     </div>
                     <div class="information-box text-box">
@@ -240,10 +289,10 @@
                             <div class="tags">
                                 <p>
                                     &nbsp;&nbsp;&nbsp;
-                                    <a title="" href="" class="color1">Procedural Generation</a>
-                                    <a title="" href="" class="color1">AI pathfinding</a>
-                                    <a title="" href="" class="color1">RPG Systems</a>
-                                    <a title="" href="" class="color1">Dungeon Crawler</a>
+                                    <a title="" class="color1">Procedural Generation</a>
+                                    <a title="" class="color1">AI pathfinding</a>
+                                    <a title="" class="color1">RPG Systems</a>
+                                    <a title="" class="color1">Dungeon Crawler</a>
                                 </p>
                             </div>
                             <div class="project-icons-list">
@@ -251,21 +300,223 @@
                                 <img src="images/cplusplus.png" alt="">
                             </div>
                             <p>
-                                They Make Sounds is a 3D exploration game where you play an archaeologist descending from the gigantic abyss to study the ruins of a mysterious civilization. <br> <br>
-                                Equipped with ancient artifacts, make your way even deeper into the abyss to unravel the secrets of this mysterious civilization and discover how their story relates to yours.
+                                Shattered Hourglass is a dungeon crawler with procedurally generated rooms and a rpg system inspired by Pokemon Mystery Dungeon. <br>
+                                It is my first full solo release and priced game.<br>
+                                <br>
+                                Here is how I contributed to the project :
+                                <ul>
+                                    <li>
+                                        🏰 Procedural generation :
+                                        Procedurally generated dungeons with rooms and corridors inspired by Rogue and Pokémon Mystery Dungeon.
+                                    </li>
+                                    <li>
+                                        🐺 RPG Systems :
+                                        Dungeon gameplay with health and Mana, spells, items and traps. NPC's with dialogue and portraits.
+                                    <li>
+                                        👾 AI :
+                                        Unique enemies for each dungeons with their own behaviour. Pathfinding using the Disjktra Algorithm
+                                    </li>
+                                </ul>
                             </p>
                             <div class="project-play-link-wrapper">
                                 Play it here :
                                 <div class="ItchImage"> 
-                                    <a href="https://theymakesounds.itch.io/they-make-sounds" target="_blank">
+                                    <a href="https://lyrdinn.itch.io/shattered-hourglass" target="_blank">
                                         <img src="images/itch.png">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
+                <section class="project-item reverse">
+                    <div class="media right">
+                        <img src="images/quoridor1.png" alt="Media" />
+                    </div>
+                    <div class="information-box text-box">
+                        <div class="information-box-header">
+                            <h1>Quoridor</h1>
+                        </div>
+                        <div class="information-box-content">
+                            <div class="tags">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a title="" class="color1">Genetic Algorithm</a>
+                                    <a title="" class="color1">Board game</a>
+                                </p>
+                            </div>
+                            <div class="project-icons-list">
+                                <img src="images/unityblack.png" alt="">
+                                <img src="images/csharp.png" alt="">
+                            </div>
+                            <p>
+                                Quoridor is a 9x9 plate game opposing 2 or 4 players where you need to traverse to the other side of the board. <br>
+                                To the already existing previous project we added Genetic Algorithm generation. <br>
+                                <br>
+                                Here is how I contributed to the project :
+                                <ul>
+                                    <li>
+                                        🧬 Genetic Algorithm :
+                                        Algorithm with multiple inputs : individuals, generations, winner selection, mutation.
+                                    </li>
+                                    <li>
+                                        🤖 AI :
+                                        AI that analysises multiple steps in advance to craft a strategy.
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="project-play-link-wrapper">
+                                Check it here :
+                                <div class="ItchImage"> 
+                                    <a href="https://github.com/Sand-Fox/Quoridor-Genetic-Algorithm" target="_blank">
+                                        <img src="images/github.webp"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-item">
+                    <div class="media left">
+                        <a href="https://youtu.be/0yXIqEj37sA" target="_blank">
+                            <img src="https://img.youtube.com/vi/0yXIqEj37sA/hqdefault.jpg" alt="Watch video" />
+                        </a>
+                    </div>
+
+                    <div class="information-box text-box">
+                        <div class="information-box-header">
+                            <h1>OpenGL Minecraft</h1>
+                        </div>
+                        <div class="information-box-content">
+                            <div class="tags">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a title="" class="color1">OpenGL</a>
+                                    <a title="" class="color1">Terrain Generation</a>
+                                    <a title="" class="color1">Shaders and Textures</a>
+                                    <a title="" class="color1">Minecraft</a>
+                                </p>
+                            </div>
+                            <div class="project-icons-list">
+                                <img src="images/opengl.png" alt="">
+                                <img src="images/cplusplus.png" alt="">
+                            </div>
+                            <p>
+                                Replica of Minecraft using C++, OpenGL and our teacher's Guillaume LeVieux's engine. You can walk, jump and mine.<br>
+                                <br>
+                                Here is how I contributed to the project :
+                                <ul>
+                                    <li>
+                                        🧊 Minecraft :
+                                        Minecraft replica with cubes, movement, mining.
+                                    </li>
+                                    <li>
+                                        🏰 Procedural generation :
+                                        Procedurally generated terrain, tree generation with leaf/trunk randomness.
+                                    </li>
+                                    <li>
+                                        🎨 Graphics :
+                                        Textured cubes, water shader with reflection, moving sun with day/night time and skybox.
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="project-play-link-wrapper">
+                                Check it here :
+                                <div class="ItchImage"> 
+                                    <a href="https://github.com/Lyrdinn/Projet-Minicraft" target="_blank">
+                                        <img src="images/github.webp"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-item reverse">
+                    <div class="media right">
+                        <img src="images/triose.png" alt="Media" />
+                    </div>
+                    <div class="information-box text-box">
+                        <div class="information-box-header">
+                            <h1>Triose</h1>
+                        </div>
+                        <div class="information-box-content">
+                            <div class="tags">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a title="" class="color1">Multiplayer</a>
+                                    <a title="" class="color1">Boss Fight</a>
+                                    <a title="" class="color1">Bullet Hell</a>
+                                </p>
+                            </div>
+                            <div class="project-icons-list">
+                                <img src="images/unityblack.png" alt="">
+                                <img src="images/csharp.png" alt="">
+                            </div>
+                            <p>
+                                TRIOSE is a cooperative shoot 'em up for 2 players where you have to shoot your way through a 3 phases boss. <br>
+                                <br>
+                                Here is how I contributed to the project :
+                                <ul>
+                                    <li>
+                                        👥 Local Multiplayer :
+                                        2 players cooperative multiplayer with one health bar for both. Co-op shooting mechanics.
+                                    </li>
+                                    <li>
+                                        👁️ Boss fight :
+                                        Huge boss with 3 phases with damageable parts and different patterns.
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="project-play-link-wrapper">
+                                Check it here :
+                                <div class="ItchImage"> 
+                                    <a href="https://shanori.itch.io/triose" target="_blank">
+                                        <img src="images/itch.png"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                </div>
+                
+                <div id="resume" class="resume-list">
+                    <div id="resume" class="resume-box">
+                        <div class="information-box-header">
+                            <h1>Resume - EN</h1>
+                        </div>
+                        <div class="resume-container">
+                            <div class="resume-image">
+                                <a href="./assets/CV_Lucien_Secord.pdf" target="_blank">
+                                    <img src="images/cv_temp.png">
+                                </a>
+                            </div>
+                            <p>
+                                Click to download
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resume-box">
+                        <div class="information-box-header">
+                            <h1>Resume - FR</h1>
+                        </div>
+                        <div class="resume-container">
+                            <div class="resume-image">
+                                <a href="./assets/CV_Lucien_Secord.pdf" target="_blank">
+                                    <img src="images/cv_temp.png">
+                                </a>
+                            </div>
+                            <p>
+                                Click to download
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

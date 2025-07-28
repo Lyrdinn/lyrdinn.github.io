@@ -175,7 +175,6 @@ div.information-box {
   border-bottom: 2px solid var(--lightBlueBg); /* Divider line */
 }
 
-
 .information-box-header > h1 {
   margin: 0;
   font-size: 1.75em;
@@ -245,7 +244,8 @@ div.text-box {
 }
 
 .project-icons-list img {
-  width: 30px;
+  height: 30px;
+  width: auto;
   transition: transform .2s;
 }
 
@@ -363,7 +363,7 @@ div.text-box {
 .media video {
   width: 100%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 25px;
 }
 
 .ItchImage {
@@ -373,7 +373,7 @@ div.text-box {
 }
 
 .ItchImage img {
-  width: 40px;
+  width: 45px;
   height: auto;
   transition: transform .2s;
 }
@@ -416,4 +416,85 @@ div.text-box {
     width: 100%;
     height: auto;
   }
+}
+
+.resume-list
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.resume-box
+{
+  width: 400px;
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 1.5em;
+  font: 100% 'BR Cobane', sans-serif;
+  color: (var(--lightBrownBg));
+  border: 10px solid #76423cd1;
+  box-shadow: 0 0 25px #76423c63;
+
+  text-align: center;
+  justify-content: center;
+
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.resume-container {
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+.resume-container-header {
+  color: white;
+  background-color: var(--lightBlueBg); /* Distinct header color */
+  padding: 1em;
+  border-bottom: 2px solid var(--lightBlueBg); /* Divider line */
+}
+
+.resume-container-header > h1 {
+  margin: 0;
+  font-size: 1.75em;
+}
+
+.resume-container > .resume-container-header {
+  border-radius: 10px 10px 0 0;
+}
+
+.resume-container > .resume-container-content {
+  border-radius: 0 0 10px 10px;
+}
+
+.portrait-container img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgb(250 250 250 / 50%);
+}
+
+.resume-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* take all vertical space in container */
+  width: 100%; /* take full width */
+  overflow: hidden;
+  padding: 10px; /* optional */
+}
+
+.resume-image img {
+  max-width: 80%;
+  max-height: auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  object-fit: contain;
+}
+
+.resume-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(250, 250, 250, 0.5);
 }
