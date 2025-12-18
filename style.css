@@ -298,7 +298,7 @@ div.text-box {
   content: "";
   position: absolute;
   top:0;
-  left: -12px;
+  left: -11.5px;
   width: 0;
   height: 0;
   border-color: transparent var(--lightBlueBg) transparent transparent;
