@@ -93,8 +93,8 @@ body {
 
 /* PORTRAIT */
 .portrait {
-  height: 200px;
-  width: 150px;
+  height: auto;
+  width: 70%;
   border-radius: 10px;
   overflow: visible;
   transition: all 0.2s ease;
@@ -131,6 +131,7 @@ body {
 .icons-list img {
   margin: 10px;
   width: 70px;
+  max-width: 12vw;
   height: auto;
   transition: transform .2s;
   align-items: center;
