@@ -215,6 +215,18 @@ div.text-box {
   color: var(--lightBrownText);
 }
 
+#experience-header {
+  text-align: center;
+  margin: 2% 10%;
+  position: relative;
+}
+
+#projects-header {
+  text-align: center;
+  margin: 2% 10%;
+  position: relative;
+}
+
 /* ************ ******* */
 
 /*** PROJECT ***/
