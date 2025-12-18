@@ -310,7 +310,7 @@ div.text-box {
   content: "";
   position: absolute;
   top:0;
-  left: -11.5px;
+  left: -12px;
   width: 0;
   height: 0;
   border-color: transparent var(--lightBlueBg) transparent transparent;
@@ -322,7 +322,7 @@ div.text-box {
   content: "";
   position: absolute;
   top: 10px;
-  left: 1px;
+  left: 0px;
   float: left;
   width: 5px;
   height: 5px;
